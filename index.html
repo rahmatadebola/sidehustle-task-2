@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling HTML forms</title>
+    <style>
+      * {
+        background-color: rosybrown;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+      }
+      #submit {
+        padding: 1 px;
+        background-color: lightskyblue;
+        border-radius: 4px;
+        border-color: 2px solid aqua;
+        height: 34;
+      }
+      #submit:hover {
+        background-color: lightblue;
+        cursor: grab;
+      }
+      body {
+    
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      h1 {
+        text-align: center;
+      }
+      input {
+        width: 400px;
+        height: 50px;
+        margin: 5px 5px;
+        border-radius: 10px;
+        font-size: 14px;
+      }
+      fieldset {
+        margin: 2em 0;
+        padding: 1em 2em;
+        border: 2px solid burlywood;
+      }
+      label {
+        display: block;
+        margin-top: 1 em;
+      }
+      #container{
+        background-color: aquamarine;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container>
+    <form action="" onsubmit="myFunction()">
+      <fieldset>
+        <legend><h3>Sign-Up Form</h3></legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" size="40" required /> <br />
+        <label for="email">Email address:</label>
+        <input type="email" name="email" id="email" size="40" required /> <br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          size="40"
+          required
+        />
+        <br />
+        <label for="p-no">Phone number:</label>
+        <input type="number" name="p-no" id="p-no" size="40" /> <br />
+        <p>Gender :</p>
+        <input type="radio" name="gender" id="gender" required />
+        <label for="gender"> Female</label>
+        <input type="radio" name="gender" id="gender" />
+        <label for="gender">Male</label> <br />
+        <input type="button" value="Submit" id="submit" />
+      </fieldset>
+    </div>
+    </form>
+    <script>
+      function myFunction() {
+        alert("The form was successfully submitted!");
+      }
+    </script>
+  </body>
+</html>
